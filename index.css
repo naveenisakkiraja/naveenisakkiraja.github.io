@@ -1,0 +1,84 @@
+body { 
+    margin: 1em;
+     color:rgb(255, 247, 0); 
+     background-image: url("./bg.jpg");
+    
+    font-size: 120%; 
+    font-family: Helvetica,Arial,Sans-serif;
+ }
+
+header
+ {
+     width: 100%;
+     border-bottom: 3px solid rgb(237, 237, 237);
+      padding: 3px; 
+     
+}
+footer
+ {
+    width: 100%; 
+    font-size: 80%;
+     padding: 3px;
+      border-bottom: 3px solid rgb(255, 205, 247);
+      background-color: black;
+      opacity: 5;
+      border-radius: 20px;
+      padding:10px;
+     }
+p{
+    background-color: black;
+    opacity: 5;
+}
+h1
+ {
+      font-family: Helvetica,Arial,sans-serif; 
+      text-align: center;
+  font-weight: bold;
+   font-size: 2.0em;  
+   background-color: transparent;
+   color:gold ;
+    margin-top: 0.5em;
+ }
+
+#ComputeButton 
+{
+    margin: 20px; 
+    background-color: transparent; 
+    font: 20px arial;
+   background-color: rgb(255, 255, 255);
+    border-radius:3px;
+    color:rgb(0, 0, 0);
+    outline:2px;
+
+}
+#altfield{
+    color:green;
+    font-size: 100%; 
+   background-color: rgb(254, 254, 254);
+}
+input[type='text'] 
+{
+   outline: none;
+   border: none;
+   font-size: 100%; 
+   color:rgb(252, 255, 83);
+   margin-top:10px;
+   background-color: black;
+  
+    }
+fieldset{
+    margin-top: 2%;
+    background-color: black;
+    color: azure;
+    opacity:4;
+    border-radius: 20px;
+   
+}
+#altunits{
+    color:rgb(255, 247, 0);
+    font-size: 100%; 
+   background-color: transparent;
+}
+a{
+    color:white;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>International Standard Atmosphere Calculator</title>
+<meta name="Description" content="Compute the properties of the standard 
+atmosphere at a specified altitude using 1976 Standard Atmosphere Model.
+The user may choose between SI and US Custom units." />
+<meta name="author" content="Naveen Isakki Raja M" />
+
+<!-- HISTORY
+   DATE            WHO                         COMMENT
+12 May 2022     Naveen Isakki Raja    created a first version of ISA Calculator web app
+-->
+
+<link rel="stylesheet" href="./index.css">
+
+<script src="./index.js"></script>
+
+</head>
+
+<body onload="HideResults();"> 
+
+<header><h1>International Standard Atmosphere Calculator</h1></header>
+
+<!-- This is an example of a form that is not submitted.  All of the computation is done
+     by the included javascript functions. No server calculations needed. -->
+
+<center><p> Select the Units. Enter the desired altitude. Then Click the "Compute" button.</p></center>
+
+<form>
+  <input type="radio" name="units" value="SI" id="unitsSi" checked="checked"
+     onchange = "ChangeUnits();" > SI
+  <input type="radio" name="units" value="US" onchange = "ChangeUnits();" > US
+  
+  <input id="ComputeButton" type="button" 
+     value="Compute" onclick="ComputeAtmosphere();" > 
+  <br />
+
+  <label for="altfield"><b>Altitude: </b></label>
+  <input type="text" name="altfield" id="altfield" size="13"
+     placeholder="Enter the altitude" onfocus = "HideResults();" value="0" autofocus>
+
+  <input type="text" size="6" name="altunits" id="altunits" value="meters"
+     id="altunits" readonly="readonly" tabindex=0 > <br />
+
+
+  <fieldset id="results">
+
+
+  <center><label for="tempfield">Temperature = </label>
+  <input type="text" size="15" name="tempfield" id="tempfield" value=" " readonly="readonly" >
+  <br />
+  <label for="pressfield">Pressure = </label>
+  <input type="text" size="15" name="pressfield" id="pressfield" value=" " readonly="readonly" >
+  <br />
+  <label for="denfield">Density = </label>
+  <input type="text" size="15" name="denfield" id="denfield" value=" " readonly="readonly" >
+  <br />
+
+  <label for="asoundfield">speed of sound = </label>
+  <input type="text" size="15" name="asoundfield" id="asoundfield" value=" " readonly="readonly" >
+  <br />
+
+ <label for="thetafield">temperature / sea level temperature = </label>
+  <input type="text" size="15" name="thetafield" id="thetafield" value=" " readonly="readonly" >
+  <br />
+  
+  <label for="deltafield">pressure / sea level pressure = </label>
+  <input type="text" size="15" name="deltafield" id="deltafield" value=" " readonly="readonly" >
+  <br />
+  <label for="sigmafield">density / sea level density = </label>
+  <input type="text" size="15" name="sigmafield" id="sigmafield" value=" " readonly="readonly" >
+  <br />
+  </center>
+
+  </fieldset>
+
+
+</form>
+
+<br>
+<footer>
+<br />
+<center><b>Description</b></center><br />
+The equations and parameters used are documented in a book entitled U.S. Standard Atmospere, 1976 
+published by the U.S. Government Printing Office, Washington, D.C.
+<br />
+The equations defining the 1976 Standard Atmosphere Model upto 86 km (282,000 ft.) from sea level that accepts 
+altitude as an input argument and returns non-dimensional values of temperature, pressure, density,etc. and it has been back-tested and validated against the NASA-TM-X-74335 report.
+<br /><br />
+<b>Last updated: </b>2022 May 12<br><br> <b>Contact:  </b>
+   <a href="mailto:naveenisakkiraja.1808021@srec.ac.in">naveenisakkiraja.1808021@srec.ac.in</a><br />
+</footer>
+
+</body>
+</html>
