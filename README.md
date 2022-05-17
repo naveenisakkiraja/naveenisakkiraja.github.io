@@ -7,5 +7,5 @@ Compute the basic properties of the standard atmosphere at a specified altitude 
 * It can compute only 0 to 86 Km.
 # License:
 This repository is under Standard Apache 2.0 License
-# Credits:
+# Credits/Citation:
 Ralph Carmichael, PDAS.
