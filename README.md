@@ -8,4 +8,7 @@ Compute the basic properties of the standard atmosphere at a specified altitude 
 # License:
 This repository is under Standard Apache 2.0 License
 # Credits/Citation:
-Ralph Carmichael, PDAS.
+1. Harry Wexler (USWB)
+2. Sidney Teweles (NOAA)
+3. Maurice Dubin (NASA)
+4. Ralph Carmichael (NASA)
