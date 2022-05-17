@@ -1,5 +1,5 @@
 # ISA Calculator 
-Web App: naveenisakkiraja.github.io
+Copy & Paste this URL: naveenisakkiraja.github.io
 # Description:
 Compute the basic properties of the standard atmosphere at a specified altitude using 1976 Standard Atmosphere Model.
 # Limitations:
