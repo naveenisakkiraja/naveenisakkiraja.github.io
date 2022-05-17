@@ -3,7 +3,7 @@ body {
      color:rgb(255, 247, 0); 
      background-image: url("./bg.jpg");
     
-    font-size: 120%; 
+    font-size: 130%; 
     font-family: Helvetica,Arial,Sans-serif;
  }
 
@@ -44,15 +44,15 @@ h1
 {
     margin: 20px; 
     background-color: transparent; 
-    font: 20px arial;
-   background-color: rgb(255, 255, 255);
-    border-radius:3px;
+    font: 22px arial;
+   background-color: rgb(255, 247, 0);
+    border-radius:7px;
     color:rgb(0, 0, 0);
     outline:2px;
 
 }
 #altfield{
-    color:green;
+    color:black;
     font-size: 100%; 
    background-color: rgb(254, 254, 254);
 }
