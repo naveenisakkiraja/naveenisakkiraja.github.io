@@ -8,11 +8,6 @@ atmosphere at a specified altitude using 1976 Standard Atmosphere Model.
 The user may choose between SI and US Custom units." />
 <meta name="author" content="Naveen Isakki Raja M" />
 
-<!-- HISTORY
-   DATE            WHO                         COMMENT
-12 May 2022     Naveen Isakki Raja    created a first version of ISA Calculator web app
--->
-
 <link rel="stylesheet" href="./index.css">
 
 <script src="./index.js"></script>
@@ -23,26 +18,24 @@ The user may choose between SI and US Custom units." />
 
 <header><h1>International Standard Atmosphere Calculator</h1></header>
 
-<!-- This is an example of a form that is not submitted.  All of the computation is done
-     by the included javascript functions. No server calculations needed. -->
-
-<center><p> Select the Units. Enter the desired altitude. Then Click the "Compute" button.</p></center>
-
 <form>
+   <br />
+   <center>
   <input type="radio" name="units" value="SI" id="unitsSi" checked="checked"
      onchange = "ChangeUnits();" > SI
-  <input type="radio" name="units" value="US" onchange = "ChangeUnits();" > US
+  <input type="radio" name="units" value="US" id = "unitsUs" onchange = "ChangeUnits();" > US
   
   <input id="ComputeButton" type="button" 
-     value="Compute" onclick="ComputeAtmosphere();" > 
+     value="Calculate" onclick="ComputeAtmosphere();" > 
   <br />
 
   <label for="altfield"><b>Altitude: </b></label>
-  <input type="text" name="altfield" id="altfield" size="13"
+  <input type="text" name="altfield" id="altfield" size="15"
      placeholder="Enter the altitude" onfocus = "HideResults();" value="0" autofocus>
 
-  <input type="text" size="6" name="altunits" id="altunits" value="meters"
+  <input type="text" size="9" name="altunits" id="altunits" value="meters"
      id="altunits" readonly="readonly" tabindex=0 > <br />
+  </center>
 
 
   <fieldset id="results">
@@ -83,13 +76,12 @@ The user may choose between SI and US Custom units." />
 <footer>
 <br />
 <center><b>Description</b></center><br />
-The equations and parameters used are documented in a book entitled U.S. Standard Atmospere, 1976 
-published by the U.S. Government Printing Office, Washington, D.C.
+Compute the basic properties of the standard atmosphere at a specified altitude up to 86 km from sea level using the U.S. Standard Atmosphere Model, 1976 published by the U.S. Government Printing Office, Washington, D.C.
 <br />
-The equations defining the 1976 Standard Atmosphere Model upto 86 km (282,000 ft.) from sea level that accepts 
-altitude as an input argument and returns non-dimensional values of temperature, pressure, density,etc. and it has been back-tested and validated against the NASA-TM-X-74335 report.
+The user may choose between SI or US units. It accepts  
+altitude as an input argument and returns non-dimensional values of temperature, pressure, density and the output values has been validated against the NASA-TM-X-74335 report.
 <br /><br />
-<b>Last updated: </b>2022 May 12<br><br> <b>Contact:  </b>
+<b>Last updated: </b>2022 May 18<br><br> <b>Contact:  </b>
    <a href="mailto:naveenisakkiraja.1808021@srec.ac.in">naveenisakkiraja.1808021@srec.ac.in</a><br />
 </footer>
 
